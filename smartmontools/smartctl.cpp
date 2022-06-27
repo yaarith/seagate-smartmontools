@@ -739,7 +739,7 @@ static int parse_options(int argc, char** argv, const char * & type,
       scsiopts.smart_background_log = true;
       scsiopts.smart_ss_media_log = true;
       scsiopts.sasphy = true;
-      ataopts.farm_log_suggest = scsiopts.farm_log_suggest = true;  // Helper for FARM debug messages
+      ataopts.farm_log = scsiopts.farm_log = true;
       if (!output_format_set)
         ataopts.output_format |= ata_print_options::FMT_BRIEF;
       break;
